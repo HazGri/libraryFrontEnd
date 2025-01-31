@@ -1,0 +1,149 @@
+* { font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    height: 100%;
+    margin: 0;
+}
+.header{
+    background-color: rgb(103, 172, 218);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.header__word {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.accueil, .livres {
+    opacity: 0.7;
+}
+.accueil:hover, .livres:hover{
+    opacity: 1;
+}
+.container{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.banner {
+    background-color: rgb(103, 172, 218);
+    width: 80%;
+    text-align: center;
+    color : white;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 6px;
+    font-family: "Sigmar One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.lorem {
+    width: 80%;
+}
+
+.banner__black {
+    background-color: grey;
+    height: 40px;
+    width: 85%;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 5px;
+    color: white;
+}
+
+.banner__black--word{
+    margin: 10px;
+}
+.line {
+    height: 60px;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+}
+
+.titre {
+    margin-right: 30px;
+}
+
+
+.styled-table{
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 85%;
+    text-align: center;
+}
+#table_header {
+    background-color: grey;
+    font-size: 20px;
+    color: white;
+}
+
+.btn {
+    margin: 10px 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
+.modifier-btn{
+    background-color: orange;
+
+}
+.supprimer-btn{
+    background-color: red;
+    
+}
+.ajouter-btn {
+    width: 85%;
+    background-color: rgb(77, 231, 77);
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    text-align: center;
+}
+th {
+    padding: 10px;
+}
+tr {
+    border:solid 0.5px black;
+    border-left: none;
+    border-right: none;
+}
+.form-group {
+    width: auto;
+    padding: 10px;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+}
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+form {
+    width: 80%;
+}
+.valider-btn {
+    background-color: green;
+    
+}
+.hide {
+    display: none;
+}
+

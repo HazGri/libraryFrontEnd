@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+  </head>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header__word monsite">@monSite</div>
+            <div class="header__word accueil"><a href="index.html">Accueil</a></div>
+            <div class="header__word livres">Livres</div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="banner">
+            Liste des livres de la Bibliothèque
+        </div>
+        <table class="styled-table" id="tableau-livres">
+            <thead id="table_header">
+                <tr class="test">
+                    <th>Titre</th>
+                    <th>Auteur</th>
+                    <th>Nombres de page</th>
+                    <th colspan="2">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <a href="" class="btn ajouter-btn">Ajouter</a>
+        <form id="livreForm" action="">
+            <fieldset>
+                <legend>Création d'un livre</legend>
+                <div class="form-group">
+                <label for="titre">Titre du livre</label>
+                <input type="text" id="titre">
+                </div>
+                <div class="form-group">
+                <label for="auteur">Auteur</label>
+                <input type="text" id="auteur">
+                </div>
+                <div class="form-group">
+                <label for="pages">Nombre de pages</label>
+                <input type="number" id="pages">
+                </div>
+                <button id="validerBtn" class="btn valider-btn">Valider</button>
+            </fieldset>
+        </form>
+        <form  id="modifLivreForm">
+            <fieldset>
+                <legend>Modification d'un livre</legend>
+                <div class="form-group">
+                <label for="titre">Titre du livre</label>
+                <input type="text" id="titreModif">
+                </div>
+                <div class="form-group">
+                <label for="auteur">Auteur</label>
+                <input type="text" id="auteurModif">
+                </div>
+                <div class="form-group">
+                <label for="pages">Nombre de pages</label>
+                <input type="number" id="pagesModif">
+                </div>
+                <input type="hidden" id="identifiant" value="">
+                <button id="validerBtnModif" class="btn valider-btn">Valider</button>
+            </fieldset>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+<!-- <button class="btn" id="ajouter-btn"></button> -->
